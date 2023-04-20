@@ -13,8 +13,7 @@ const CountryCard = ({ name, population, region, capital, flag }: CountryCardTS)
         <Link href={`/country/${name}`} className='cursor-pointer transform transition duration-300 hover:scale-105 active:scale-95'>
             <div className='flex flex-col w-5/6 max-w-[350px] min-w-[150px] mx-auto rounded-t-md cursor-pointer'>
                 <div className='rounded-t-md'>
-                    <img src={flag} alt={`Bandera de ${name}`} className='w-full h-48 rounded-t-md' />
-                    {/* <Image src={flag} alt={`Bandera de ${name}`} /> */}
+                    <img src={flag} alt={`Bandera de ${name}`} className='w-full h-48 md:h-46 rounded-t-md' />
                 </div>
                 <div className='flex flex-col gap-1 text-black dark:text-white bg-gray-100 dark:bg-[#2b3743] pt-7 px-7 pb-10 rounded-b-md'>
                     <p className='text-lg font-bold pb-3'>{name}</p>

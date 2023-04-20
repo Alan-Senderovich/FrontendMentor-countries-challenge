@@ -5,11 +5,6 @@ import { MoonIcon } from '@heroicons/react/24/solid'
 function LightModeToggle() {
     const [isDarkMode, setIsDarkMode] = useState(false)
 
-    // useEffect(() => {
-    //     const isLight = window.matchMedia("(prefers-color-scheme: light)").matches
-    //     setIsLightMode(isLight)
-    // }, [])
-
     const toggleLightMode = () => {
         setIsDarkMode(!isDarkMode)
         document.documentElement.classList.toggle('dark')

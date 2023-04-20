@@ -32,7 +32,7 @@ const SingleCountryCard = ({ flags, currencies, name, population, region, subreg
                     <p className='font-bold text-lg pb-4'>Border Countries:</p>
                     <div className='flex flex-wrap'>
                         {borders?.map((border, index) => (
-                            <Link href={`/code/${border}`} className='px-5 py-2 mr-2 mb-2 text-sm font-medium leading-5 text-[#2b3743] bg-white dark:bg-[#2b3743] rounded-sm hover:bg-gray-300 transform transition duration-300 hover:scale-105 active:scale-95 focus:outline-none' key={index}>
+                            <Link href={`/code/${border}`} className='px-5 py-2 mr-2 mb-2 text-sm font-medium leading-5 text-[#2b3743] bg-white dark:bg-[#2b3743] dark:text-[#fff] rounded-sm hover:bg-gray-300 transform transition duration-300 hover:scale-105 active:scale-95 focus:outline-none' key={index}>
                                 {border}
                             </Link>
                         ))}
